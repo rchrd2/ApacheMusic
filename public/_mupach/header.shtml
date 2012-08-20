@@ -1,6 +1,18 @@
 <!--#config errmsg="" --><html>
 <head>
 <!--
+      ___           ___                         ___           ___           ___     
+     /  /\         /  /\          ___          /  /\         /  /\         /  /\    
+    /  /::|       /  /:/         /  /\        /  /::\       /  /::\       /  /:/    
+   /  /:|:|      /  /:/         /  /::\      /  /:/\:\     /  /:/\:\     /  /:/     
+  /  /:/|:|__   /  /:/         /  /:/\:\    /  /::\ \:\   /  /:/  \:\   /  /::\ ___ 
+ /__/:/_|::::\ /__/:/     /\  /  /::\ \:\  /__/:/\:\_\:\ /__/:/ \  \:\ /__/:/\:\  /\
+ \__\/  /~~/:/ \  \:\    /:/ /__/:/\:\_\:\ \__\/  \:\/:/ \  \:\  \__\/ \__\/  \:\/:/
+       /  /:/   \  \:\  /:/  \__\/  \:\/:/      \__\::/   \  \:\            \__\::/ 
+      /  /:/     \  \:\/:/        \  \::/       /  /:/     \  \:\           /  /:/  
+     /__/:/       \  \::/          \__\/       /__/:/       \  \:\         /__/:/   
+     \__\/         \__\/                       \__\/         \__\/         \__\/    
+
 This site is running on Mupach (Music Apache), an opensource framework for serving 
 music using apache mod_autoindex. More info available at: http://github.com/rcaceres/mupach
 -->
@@ -24,3 +36,4 @@ music using apache mod_autoindex. More info available at: http://github.com/rcac
 <br>
 <br>
 <div class="liner"><!--#include virtual="$REQUEST_URI/liner.txt" --></div>
+<br>
