@@ -16,8 +16,10 @@ Mupach (Music Apache) is a framework for serving music using apache mod_autoinde
 
 See example: http://dev.rchrd.net/example/mupach/
 
-Screenshot before install: http://dev.rchrd.net/example/mupach/_mupach/mupach-before.png
-Screenshot after install: http://dev.rchrd.net/example/mupach/_mupach/mupach-after.png
+Screenshot before install: 
+  http://dev.rchrd.net/example/mupach/_mupach/mupach-before.png
+Screenshot after install: 
+  http://dev.rchrd.net/example/mupach/_mupach/mupach-after.png
 
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 
@@ -45,7 +47,6 @@ RELEASE NOTES
 AUTHOR:
 
 Richard Caceres <me@rchrd.net>
-Copyright Richard Caceres, 2010
 http://github.com/rcaceres/
 http://rchrd.net
 
