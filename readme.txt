@@ -12,7 +12,8 @@
 
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 
-Mupach (Music Apache) is a framework for serving music using apache mod_autoindex
+Mupach (Music Apache) is a minimalist framework for serving music using only 
+apache mod_autoindex and mod_include. Look ma, no php!
 
 See example: http://dev.rchrd.net/example/mupach/
 
