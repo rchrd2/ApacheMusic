@@ -1,0 +1,59 @@
+#-------------------------------------------------------------------------------
+# Mupach Config :)
+#-------------------------------------------------------------------------------
+
+# SITE_ROOT is the path to your site. 
+#   If it is the root just set it to /
+#   If your site is in a sub-director, set it to something like this: /mupach/public/
+#   Must have slash at the end.
+
+SetEnv SITE_ROOT /mupach/source/public/
+
+# You must also configure these as per your environment
+HeaderName /mupach/source/public/_mupach/header.shtml
+ReadmeName /mupach/source/public/_mupach/footer.shtml
+
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+  Options +FollowSymLinks
+
+  # This set a default image for Album-Art. Configure this, too.
+  RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} !-f
+  RewriteRule \.(gif|jpe?g|png|bmp) /mupach/source/public/_mupach/blank.gif [NC,L]
+
+</IfModule>
+
+<IfModule mod_autoindex.c>
+    IndexOptions \
+       -HTMLTable \
+       NameWidth=* \
+       FancyIndexing \
+       IgnoreCase \
+       VersionSort \
+       SuppressIcon \
+       SuppressHTMLPreamble \
+       SuppressColumnSorting \
+       SuppressDescription \
+       SuppressSize \
+       SuppressLastModified \
+       SuppressRules
+    
+    IndexIgnore \
+       .\
+       ..\
+       header.shtml \
+       footer.shtml \
+       album-art.php \
+       favicon.gif \
+       favicon.ico \
+       _mupach \
+       liner.txt \
+       Album-Art.jpg
+
+</IfModule>
+
+<IfModule mod_include.c>
+  AddType text/html .shtml
+  AddHandler server-parsed .shtml
+</IfModule>
+

@@ -1,0 +1,27 @@
+body {
+  width:700px;
+  padding: 0 1em 140px 1em;
+  line-height:1.25em;
+  font-size:12px;
+}
+/*
+.ywp-container {
+ position:relative !important;
+ bottom:0 !important;
+ padding: 1em 0 2em 0 !important;
+}
+.ywp-container, .ywp-player {
+ box-shadow: 0 !important;
+ -webkit-box-shadow: 0 0 0 0 white !important;
+ -mox-box-shadow: 0 0 0 0 white !important;
+ box-shadow: 0 0 0 0 white !important;
+}
+*/
+.ywp-page-play-pause .ywp-page-btn{
+  top: 4px !important;
+}
+.liner{
+ white-space:pre-wrap;
+ font-family: monospace;
+}
+
