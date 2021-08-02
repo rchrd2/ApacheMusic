@@ -24,4 +24,6 @@ body {
  white-space:pre-wrap;
  font-family: monospace;
 }
-
+center img {
+	max-width:700px;
+}

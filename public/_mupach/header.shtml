@@ -1,39 +1,28 @@
 <!--#config errmsg="" --><html>
 <head>
 <!--
-      ___           ___                         ___           ___           ___     
-     /  /\         /  /\          ___          /  /\         /  /\         /  /\    
-    /  /::|       /  /:/         /  /\        /  /::\       /  /::\       /  /:/    
-   /  /:|:|      /  /:/         /  /::\      /  /:/\:\     /  /:/\:\     /  /:/     
-  /  /:/|:|__   /  /:/         /  /:/\:\    /  /::\ \:\   /  /:/  \:\   /  /::\ ___ 
+      ___           ___                         ___           ___           ___
+     /  /\         /  /\          ___          /  /\         /  /\         /  /\
+    /  /::|       /  /:/         /  /\        /  /::\       /  /::\       /  /:/
+   /  /:|:|      /  /:/         /  /::\      /  /:/\:\     /  /:/\:\     /  /:/
+  /  /:/|:|__   /  /:/         /  /:/\:\    /  /::\ \:\   /  /:/  \:\   /  /::\ ___
  /__/:/_|::::\ /__/:/     /\  /  /::\ \:\  /__/:/\:\_\:\ /__/:/ \  \:\ /__/:/\:\  /\
  \__\/  /~~/:/ \  \:\    /:/ /__/:/\:\_\:\ \__\/  \:\/:/ \  \:\  \__\/ \__\/  \:\/:/
-       /  /:/   \  \:\  /:/  \__\/  \:\/:/      \__\::/   \  \:\            \__\::/ 
-      /  /:/     \  \:\/:/        \  \::/       /  /:/     \  \:\           /  /:/  
-     /__/:/       \  \::/          \__\/       /__/:/       \  \:\         /__/:/   
-     \__\/         \__\/                       \__\/         \__\/         \__\/    
+       /  /:/   \  \:\  /:/  \__\/  \:\/:/      \__\::/   \  \:\            \__\::/
+      /  /:/     \  \:\/:/        \  \::/       /  /:/     \  \:\           /  /:/
+     /__/:/       \  \::/          \__\/       /__/:/       \  \:\         /__/:/
+     \__\/         \__\/                       \__\/         \__\/         \__\/
 
-This site is running on Mupach (Music Apache), an opensource framework for serving 
+This site is running on Mupach (Music Apache), an opensource framework for serving
 music using apache mod_autoindex. More info available at: http://github.com/rcaceres/mupach
 -->
   <title><!--#echo var="REQUEST_URI" --></title>
   <base href="<!--#echo var="SERVER_NAME" -->">
-  <script type="text/javascript">
-    var YWPParams = {
-        autoplay: false,
-        volume: 0.9,
-        defaultalbumart: '<!--#echo var="REQUEST_URI" -->Album-Art.jpg',
-        displaystate: 1,
-        playlink:true    
-    };
-  </script>
-  <script type="text/javascript" src="http://webplayer.yahooapis.com/player.js"></script>
 <link href="<!--#echo var="SITE_ROOT"-->/_mupach/style.css" rel="stylesheet" />
 </head>
 <body>
-<!--<h1><!--#echo var="REQUEST_URI" --></h1>-->
+  <!--<h1><!--#echo var="REQUEST_URI" --></h1>-->
 <img src="<!--#echo var="REQUEST_URI" -->/Album-Art.jpg" width="700">
 <br>
 <br>
 <div class="liner"><!--#include virtual="$REQUEST_URI/liner.txt" --></div>
-<br>

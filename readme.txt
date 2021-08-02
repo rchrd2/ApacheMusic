@@ -1,26 +1,23 @@
-      ___           ___                         ___           ___           ___     
-     /  /\         /  /\          ___          /  /\         /  /\         /  /\    
-    /  /::|       /  /:/         /  /\        /  /::\       /  /::\       /  /:/    
-   /  /:|:|      /  /:/         /  /::\      /  /:/\:\     /  /:/\:\     /  /:/     
-  /  /:/|:|__   /  /:/         /  /:/\:\    /  /::\ \:\   /  /:/  \:\   /  /::\ ___ 
+      ___           ___                         ___           ___           ___
+     /  /\         /  /\          ___          /  /\         /  /\         /  /\
+    /  /::|       /  /:/         /  /\        /  /::\       /  /::\       /  /:/
+   /  /:|:|      /  /:/         /  /::\      /  /:/\:\     /  /:/\:\     /  /:/
+  /  /:/|:|__   /  /:/         /  /:/\:\    /  /::\ \:\   /  /:/  \:\   /  /::\ ___
  /__/:/_|::::\ /__/:/     /\  /  /::\ \:\  /__/:/\:\_\:\ /__/:/ \  \:\ /__/:/\:\  /\
  \__\/  /~~/:/ \  \:\    /:/ /__/:/\:\_\:\ \__\/  \:\/:/ \  \:\  \__\/ \__\/  \:\/:/
-       /  /:/   \  \:\  /:/  \__\/  \:\/:/      \__\::/   \  \:\            \__\::/ 
-      /  /:/     \  \:\/:/        \  \::/       /  /:/     \  \:\           /  /:/  
-     /__/:/       \  \::/          \__\/       /__/:/       \  \:\         /__/:/   
-     \__\/         \__\/                       \__\/         \__\/         \__\/    
+       /  /:/   \  \:\  /:/  \__\/  \:\/:/      \__\::/   \  \:\            \__\::/
+      /  /:/     \  \:\/:/        \  \::/       /  /:/     \  \:\           /  /:/
+     /__/:/       \  \::/          \__\/       /__/:/       \  \:\         /__/:/
+     \__\/         \__\/                       \__\/         \__\/         \__\/
 
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 
-Mupach (Music Apache) is a minimalist framework for serving music using only 
+Mupach (Music Apache) is a minimalist framework for serving music using only
 apache mod_autoindex and mod_include. Look ma, no php!
 
-See example: http://dev.rchrd.net/example/mupach/
-
-Screenshot before install: 
-  http://dev.rchrd.net/example/mupach/_mupach/mupach-before.png
-Screenshot after install: 
-  http://dev.rchrd.net/example/mupach/_mupach/mupach-after.png
+See examples:
+- https://dev.rchrd.net/example/mupach/
+- https://dev.rchrd.net/example/mupach/In_A_Silent_Way/
 
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 
@@ -28,18 +25,22 @@ GETTING STARTED:
 
 -> Copy the contents of public onto your apache web server.
 -> Edit the .htaccess to have the correct paths
-     - Search for "/mupach/source/public/" and change that to the path to your 
-     Mupach root.
+     - Search for "/_mupach" and change that to the path to your
+     Mupach root. This is relative to the URL (eg the URL to the file).
+     It's not the full server path.
+-> Edit "header.shtml" to also update the paths if needed.
 -> Follow the example content structure to add your own music
      - Mupach expects two files in each directory: Album-Art.jpg, and liner.txt
-     - Mupach uses mod_autoindex to list the music files, and the Yahoo Web 
+     - Mupach uses mod_autoindex to list the music files, and the Yahoo Web
      Player parses these to generate a media player.
 
 
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 
-RELEASE NOTES 
+RELEASE NOTES
 
+08/01/21 -- Code updated so hopefully it works. Also change to soundmanager
+            instead of Yahoo music player (defunkt);
 08/19/12 -- Pushed to Github®
 
 

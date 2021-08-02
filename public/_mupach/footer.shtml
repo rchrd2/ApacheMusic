@@ -1,2 +1,14 @@
+   <script type="text/javascript" src="/_mupach/lib/soundmanager2.js"></script>
+   <script type="text/javascript" src="/_mupach/lib/inlineplayer/script/inlineplayer.js"></script>
+   <link href="/_mupach/lib/inlineplayer/css/inlineplayer.css" rel="stylesheet" />
 
-</body></html>
+   <script>
+    var links = document.links;
+    for (var i=0; i < links.length; i++) {
+      if (links[i].href.indexOf('mp3') == links[i].href.length - 3) {
+        links[i].className = 'sm2_link';
+      }
+    }
+   </script>
+</body>
+</html>
