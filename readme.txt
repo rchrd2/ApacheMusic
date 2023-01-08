@@ -31,8 +31,8 @@ GETTING STARTED:
 -> Edit "header.shtml" to also update the paths if needed.
 -> Follow the example content structure to add your own music
      - Mupach expects two files in each directory: Album-Art.jpg, and liner.txt
-     - Mupach uses mod_autoindex to list the music files, and the Yahoo Web
-     Player parses these to generate a media player.
+     - Mupach uses mod_autoindex to list the music files, and the
+     soundmanager music player parses these to generate a media player.
 
 
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
